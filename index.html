@@ -1,14 +1,87 @@
-    <!DOCTYPE html>
-    <html lang="pt-br">
-    <head>
-        <title>Título da página</title>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <h1>ZorksBR Home Page</h1>
-<p>&nbsp;</p>
-<h1><a title="ZBClient" href="zorksbr.github.io/zbclient" target="_blank" rel="noopener">ZBClient</a></h1>
-<p>&nbsp;</p>
+<!doctype html>
 
-    </body>
-    </html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ZorksBR Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Press Start 2P', system-ui, sans-serif;
+      background: #000;
+      color: #fff;
+      text-align: center;
+    }
+    header {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+    header img {
+      width: 48px;
+      height: auto;
+    }
+    header h1 {
+      font-size: 28px;
+      margin: 0;
+      font-family: 'Press Start 2P', system-ui, sans-serif;
+    }
+    hr {
+      border: none;
+      border-top: 4px solid #fff;
+      margin: 10px auto 20px;
+      width: 90%;
+    }
+    h2 {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    .sites {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 20px;
+    }
+    .site {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: #fff;
+    }
+    .site img {
+      width: 160px;
+      height: auto;
+      margin-bottom: 12px;
+    }
+    .site span {
+      font-size: 14px;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+  </style>
+</head>
+<body>
+  <header>
+    <a href="https://youtube.com/@zorksbr" target="_blank" rel="noopener noreferrer">
+      <img src="icons/youtube.png" alt="YouTube Logo">
+    </a>
+    <h1>ZorksBR Home</h1>
+  </header>
+  <hr>
+  <h2>Meus Sites</h2>
+  <div class="sites">
+    <a class="site" href="https://zorksbr.github.io/zbclient" target="_blank" rel="noopener noreferrer">
+      <img src="icons/zbclient.png" alt="Ícone EaglerCraft ZBClient">
+      <span>EaglerCraft:ZBClient</span>
+    </a>
+    <a class="site" href="https://zorksbr.github.io/snake2play" target="_blank" rel="noopener noreferrer">
+      <img src="icons/snake2play.png" alt="Ícone Snake2Play">
+      <span>Snake2Play (INDEV)</span>
+    </a>
+  </div>
+</body>
+</html>
