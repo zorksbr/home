@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>ZorksBR Home</title>
   <link rel="icon" type="image/png" href="icons/siteicon.png">
+  <script>
+    if (sessionStorage.getItem('authenticated') !== 'true') {
+      window.location.href = 'password.html';
+    }
+  </script>
+
   <style>
     body {
       margin: 0;
@@ -110,7 +116,7 @@
   <div class="sites">
     <a class="site" href="https://zorksbr.github.io/eaglercraft" target="_blank" rel="noopener noreferrer">
       <img src="icons/minecraft.png" alt="Ícone EaglerCraft">
-      <span>EaglerCraft:ZBClient</span>s
+      <span>EaglerCraft:ZBClient</span>
     </a>
       <a class="site" href="https://zorksbr.github.io/davsystems" target="_blank" rel="noopener noreferrer">
       <img src="icons/davicon.png" alt="Ícone DavSystems">
