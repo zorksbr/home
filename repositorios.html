@@ -4,8 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>ZorksBR Home</title>
+  <title>Repositórios</title>
   <link rel="icon" type="image/png" href="icons/siteicon.png">
+  <script>
+    if (sessionStorage.getItem('authenticated') !== 'true') {
+      window.location.href = 'password.html';
+    }
+  </script>
+
   <style>
     body {
       margin: 0;
@@ -77,7 +83,7 @@
     width: 100%;
     height: 100%;
 
-    background: url('fundo.png') no-repeat center center;
+    background: url('fundorep.png') no-repeat center center;
     background-size: cover;
 
     filter: blur(2.5px);
@@ -95,45 +101,23 @@
   </style>
 </head>
 <body>
-  <img class="personagem" src="icons/zorkszinho.gif" alt="oiiiiii :D"/>
 
   <div class="fundo"></div>
   
   <header>
-    <a href="https://youtube.com/@zorksbr" target="_blank" rel="noopener noreferrer">
-      <img src="icons/youtube.png" alt="YouTube Logo">
-    </a>
-    <h1>ZorksBR Home</h1>
+    <h1>Aquilo que você estava procurando.</h1>
   </header>
-  <hr>
-  <h2>Meus Sites</h2>
-  <div class="sites">
-    <a class="site" href="https://zorksbr.github.io/eaglercraft" target="_blank" rel="noopener noreferrer">
-      <img src="icons/minecraft.png" alt="Ícone EaglerCraft">
-      <span>EaglerCraft:ZBClient</span>
-    </a>
-      <a class="site" href="https://zorksbr.github.io/davsystems" target="_blank" rel="noopener noreferrer">
-      <img src="icons/davicon.png" alt="Ícone DavSystems">
-      <span>DAV Systems</span>
-    </a>
-      <a class="site" href="https://zorksbr.github.io/kernelfoundation" target="_blank" rel="noopener noreferrer">
-      <img src="icons/kernel.png" alt="Ícone Kernel">
-      <span>Kernel Foundation</span>
-    </a>
-      <a class="site" href="https://zorksbr.github.io/unlimited" target="_blank" rel="noopener noreferrer">
-      <img src="icons/unlimited.png" alt="Ícone Unlimited">
-      <span>UNLIMITED</span>
-    </a>
-  </div>
   <hr>
   <h2>Repositórios do Drive</h2>
   <div class="sites">
-    <a class="site" href="password.html" target="_blank" rel="noopener noreferrer">
+    <a class="site" href="https://drive.google.com/drive/folders/1-8aZwNkkbZXmYAIaKs3HeAEg3R-3mAWF?usp=sharing" target="_blank" rel="noopener noreferrer">
       <img src="icons/drive.png" alt="Ícone Drive">
-      <span>Repositorios</span>
+      <span>Drive do ZorksBR</span>
+    </a>
+    <a class="site" href="https://drive.google.com/drive/folders/1dpSE7kP-5U72h30GEWVZqhPvYsLBWxvH?usp=sharing" target="_blank" rel="noopener noreferrer">
+      <img src="icons/drive.png" alt="Ícone Drive">
+      <span>Drive do Henrique</span>
     </a>
   </div>
-  <!-- <img src="icons/zorkszinho.gif" alt="oiiiiii :D" style="width: 250px; height: auto; margin-left: -1200px; margin-top: 20px;"> -->
-  <img class="personagem" src="icons/zorkszinho.gif" alt="oiiiiii :D"/>
 </body>
 </html>
